@@ -5,12 +5,12 @@ A car system that can swap engines and keeps the car's speed in sync with the en
 - **Strategy Pattern:** Used for the `Engine` interface, allowing the Car to switch between Gas, Electric, and Hybrid engines at runtime.
 - **Simple Factory Pattern:** The `CarFactory` handles the instantiation logic, keeping the `Main` class clean and decoupled.
 
-### Key Logic:
+### 🚀 Key Logic:
 * **The 20:1 Rule:** Every time the car accelerates by 20 km/h, a loop call the engine's internal `increase()` method 20 times. This keeps the car and engine perfectly synchronized.
 * **Hybrid Switching:** The Hybrid engine automatically handles the logic of switching from Electric to Gas once the car hits 50 km/h.
 * **Safety:** Added checks to make sure the car can't stop while moving (speed must be 0) and stays within the 0-200 km/h limit.
 
-## Folder Structure
+## 📂 Folder Structure
 - `src/com/fawry/challenge/`: Contains all logic and engine implementations.
 - `Main.java`: A test suite that runs through basic acceleration, engine swapping, and the hybrid threshold.
 
